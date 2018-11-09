@@ -9,5 +9,7 @@ layout: example.hbs
 <script>
   var map = L.map('map').setView([39, -97.5], 4);
 
-  L.esri.basemapLayer('Streets').addTo(map);
+  L.esri.basemapLayer({
+       url:"http://60.10.25.220:6080/FSXY/rest/services/FUJIAN/MapServer"
+  }).addTo(map);
 </script>
